@@ -1,0 +1,260 @@
+@keyframes left {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+@keyframes right {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+@media screen and (max-width:600px) {
+    body {
+        overflow: auto;
+
+    }
+
+    header {
+        width: 100% !important;
+        height: max-content;
+    }
+
+    nav {
+        width: 100% !important;
+        border-bottom: 1px dotted
+    }
+
+    nav .logo {
+        position: relative;
+        right: -30px;
+        font-size: 30px !important;
+    }
+
+    nav .nav_bar {
+        
+        position: absolute;
+        width: 100vw;
+        top: 100% ;
+        background-color: linen;
+    }
+    /* .block-important {
+        display: block !important;
+    } */
+
+    /* .none-important {
+        display: none !important;
+    } */
+
+    .display-none-important {
+        display: none !important;
+    }
+    
+    .display-block-important {
+        display: block !important;
+    }
+    
+    #nav-items{
+        display: none;
+    }
+
+    .nav_bar li {
+        padding: 5px 20px;
+        border-bottom: 1px dotted
+    }
+
+
+    .menu-icon #menu-btn {
+        display: block;
+    }
+
+    .menu-icon #close-btn {
+        display: none;
+    }
+
+
+
+
+
+    main {
+        width: 100% !important;
+    }
+
+    section {
+        padding: 90px 10px !important;
+
+    }
+
+    #home {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px !important;
+    }
+    #home .home_left h1{
+        font-size: 2.5rem;
+    }
+    #home .home_left h2{
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem;
+        /* width: 100vw; */
+    }
+
+    #home .home_left .btn_box{
+        margin: 10px 0px 25px;
+    }
+
+    
+    #home .home_right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home .home_right img{
+       width: 100% !important;
+     
+
+    }
+       
+    #about {
+        width: 100% !important;
+        flex-direction: column;
+        grid-gap: 2rem !important;
+    }
+
+    #about .about_left img{
+        width: 100% !important;
+
+    }
+
+    #about .about_right{
+        width: 100% !important;
+    }
+
+    #about .about_right h2{
+        width: 100% !important;
+        font-size: 25px !important;
+        text-align: center;
+    }
+
+    #about .about_right p{
+        width: 100% !important;
+        text-align: center;
+        font-size: 14px !important;
+    }
+
+    #services {
+        width: 100% !important;
+    }
+
+    #services h2{
+        width: 100% !important;
+    }
+    #services .cards{
+        width: 100%;
+    }
+    #services .card{
+        width: 100%;
+    }
+    #services .card .icon{
+        font-size: 30px !important;
+        width: 170px;
+        height: 70px;
+    }
+
+    #skills{
+        width: 100% !important;
+        flex-direction: column;
+        gap: 2rem !important;
+    }
+
+    #skills .skills_left h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills_left .skill_card{
+        width: 100% !important;
+    }
+
+    .skill_card .icon{
+        width: 15% !important;
+        /* height: 100% !important; */
+    }
+
+    .skills_right img {
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+
+    #portfolio{
+        width: 100% !important;
+        flex-direction: column;
+    }
+
+    #portfolio h2{
+        width: 100% !important;
+        font-size: 40px !important;
+    }
+
+    #portfolio .card_portfolio{
+        width: 100% !important;
+        flex-direction: column;
+        grid-gap: 3rem !important;
+    }
+
+    .card_portfolio img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    #contact {
+        width: 100% !important;
+        flex-direction: column;
+        grid-gap: 2rem !important;
+    }
+
+    #contact .contact_left {
+        width: auto !important;
+    }
+    #contact .contact_right {
+        width: auto !important;
+        height: auto !important;
+
+    }
+
+    .contact_right img{
+        width: 100% !important;
+        height: 100% !important;
+
+    }
+
+
+    footer {
+        width: 100% !important;
+
+    }
+    footer .footer_top{
+        width: 100% !important;
+        flex-direction: column;
+        padding: 0px 0px 20px 10px;
+    }
+    footer .footer_top h3{
+       text-decoration: underline;
+    }
+
+}

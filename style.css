@@ -1,0 +1,786 @@
+/* <!-- boxicon Fontscss link For Icons --> */
+@import url(https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css);
+
+/* Font- Family */
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    scroll-behavior: smooth;
+    transition: all 0.5s;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+body {
+    height: max-content;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* <!-- ================ Header Section ============== --> */
+header {
+    width: 100vw;
+    position: fixed;
+    /* background-image: url(img/homebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: linen;
+    height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    transition: all .3s;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+header nav {
+    width: 95%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav .logo {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+nav .logo .coder {
+    color: #000;
+    -webkit-text-stroke: 1px #f00;
+    font-weight: bolder;
+}
+
+nav .logo .span {
+    color: #ff651c;
+    -webkit-text-stroke: 1px #000;
+}
+nav .Menu_List{
+    /* height: 100%; */
+    text-decoration: none;
+}
+nav .nav_bar{
+    display: flex;
+    list-style-type: none;
+    gap: 0rem 1rem;
+    /* top: -100%; */
+    transition: all .4s ease;
+}
+
+
+.nav_bar .nav_link {
+    color: #000;
+    padding: 0 5px;
+    line-height: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+nav .nav_bar .nav_link::after {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: -10px;
+    height: 3px;
+    border-radius: 10px;
+    width: 0%;
+    background-color: #ff0000;
+    transition: ease all 0.3s;
+}
+
+.nav_bar .nav_link:hover {
+    color: #ff651c;
+}
+
+.nav_bar .nav_link:hover::after {
+    left: 0;
+    right: auto;
+    /* border-radius: 30px; */
+    width: 100%;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    grid-gap: .8rem;
+}
+
+.right-header .btn_box {
+    width: 140px;
+    height: 40px;
+    background: #ff0000;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_box:hover {
+
+    box-shadow: 10px 5px 5px black;
+
+}
+
+.btn_box a {
+    color: #fff;
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.menu-icon button {
+    display: none ;
+    background: transparent;
+    outline: none;
+    border: 0;
+
+}
+
+
+
+
+/* ==================== home section css code ============================ */
+main {
+    width: 100vw;
+}
+
+section {
+    padding: 90px 8%;
+}
+
+#home {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    grid-gap: 20em;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: linen;
+}
+
+
+#home .home_left {
+    animation: left 1s ease-out;
+}
+
+.home_left h3 {
+    color: #ff0000;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+
+}
+
+.home_left h1 {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 2px #f00;
+    font-weight: 800;
+}
+
+.home_left .text-animate {
+    display: flex;
+}
+
+.text-animate h2 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    color: #ff0000;
+    /* -webkit-text-stroke: .5px #000; */
+    transition: .6s;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+.text-animate #auto-type {
+    color: #ff0000;
+
+}
+
+.text-animate span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.text-animate span::after {
+    content: '';
+    display: inline-block;
+    align-items: center;
+    width: 4px;
+    border-radius: 4px;
+    height: 30px;
+    background-color: #f00;
+    /* margin-left: 10px; */
+
+}
+.home_left p {
+    letter-spacing: 1px;
+    line-break: anywhere;
+}
+
+
+.home_left .btn_box {
+    width: 160px;
+    height: 40px;
+    background: #ff0000;
+    transition: all 0.3s;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_box:hover {
+    box-shadow: 10px 5px 5px black;
+}
+
+
+.home_right {
+    width: 70%;
+    position: relative;
+    animation: right 1s ease-out;
+    z-index: 1;
+}
+
+.home_right img {
+    height: auto;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.3);
+    cursor: pointer;
+
+}
+
+.home_right img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+
+
+
+
+/* ==================== About section css code ============================ */
+
+
+#about {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background:#ffe4c4;
+    grid-gap: 13em;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#about .about_left img {
+    width: 500px;
+    mix-blend-mode: multiply;
+    animation: left 1s ease-out;
+}
+
+.about_right {
+    animation: right 1s ease-out;
+}
+.about_right h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #000;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+
+}
+
+.about_right p {
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 1px;
+    line-break: anywhere;
+}
+
+#about .about_right .projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20%;
+    /* flex-direction:column; */
+    /* justify-content: space-evenly; */
+    align-items: center;
+    padding-top: 20px;
+}
+
+.projects .project span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ff0000;
+}
+
+.projects .project p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* ==================== SERVICES section css code ============================ */
+
+#services {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: bisque;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 0.1px solid rgb(255, 255, 255);
+}
+
+
+
+#services h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px #ff0000;
+
+}
+
+#services .cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards .card {
+    width: 49.2%;
+    height: 200px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 0px 30px;
+    transition: all 0.3s;
+}
+
+.card:hover {
+
+    box-shadow: 10px 10px 5px black;
+
+}
+
+.card .icon {
+    width: 20%;
+    height: 35%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 40px;
+    color: #ff0000;
+}
+
+.card .texts h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* ==================== skills section css code ============================ */
+#skills {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* grid-gap: 31em; */
+    background-color: burlywood;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1px solid rgb(255, 255, 255);
+
+}
+
+#skills .skills_left {
+    width: 100%;
+    animation: left 1s ease-out;
+}
+
+#skills .skills_left h2 {
+    /* text-align: left; */
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px #ff0000;
+
+}
+
+
+
+#skills .skills_cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills_cards .skill_card {
+    width: 48.5%;
+    height: 100px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    border: 2px solid black;
+    gap: 15px;
+    padding: 0px 30px;
+    transition: all 0.3s;
+}
+
+.skill_card:hover {
+
+    box-shadow: 10px 10px 5px black;
+
+}
+
+.skill_card .icon {
+    width: 20%;
+    height: 60%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 40px;
+    color: #ff0000;
+}
+
+.skill_card .texts h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.skills_right img {
+    mix-blend-mode: multiply;
+    height: 500px;
+    animation: right 1s ease-out;
+}
+
+/* ==================== portfolio section css code ============================ */
+
+#portfolio {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe4c4;
+    border-bottom: 0.1px solid rgb(255, 255, 255);
+}
+
+#portfolio h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px #ff0000;
+
+}
+
+.card_portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10rem;
+    padding-top: 80px;
+}
+
+.card_portfolio .card_left{
+    animation: left 1s ease-out;
+}
+
+.card_portfolio .card_right{
+    animation: right 1s ease-out;
+}
+
+.card_portfolio img{
+    height: 450px;
+    max-width: 550px;
+    min-height: 100%;
+    min-width: 100%;
+}
+.card_portfolio h4{
+    width: 200px;
+    height: 50px;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #ffd093;
+}
+.card_portfolio h3{
+    font-size: 30px;
+    font-weight: 800;
+    padding: 30px 0px 20px 0px;
+}
+.card_portfolio .btn_box {
+    width: 160px;
+    height: 40px;
+    background: #ff0000;
+    transition: all 0.3s;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_portfolio .btn_box:hover {
+    box-shadow: 10px 5px 5px black;
+}
+
+/* ==================== contact section css code ============================ */
+
+#contact {
+    min-height: 100vh;
+    height: 100%;
+    background-color: bisque;
+    width: 100%;
+    display: flex;
+    grid-gap: 5%;
+    border-bottom: 0.1px solid rgb(255, 255, 255);
+
+}
+
+.contact_left {
+    width: 700px;
+    height: 685px;
+    display: flex;
+    background: rgb(0, 1, 43);
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    animation: left 1s ease-out;
+}
+
+.contact_left .main-text {
+    color: #fff;
+    text-align: center;
+
+}
+
+.contact_left label {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    padding: 20px 0px 10px 0px;
+}
+
+.contact_left input {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #e8e1e1;
+    outline: none;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact_left textarea {
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: 2px solid #e8e1e1;
+    border-radius: 5px;
+}
+
+.contact_left .formBtn {
+    padding-top: 5%;
+}
+
+.contact_left .formBtn button {
+    background: #ff0000;
+    width: 150px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    border: 0;
+    height: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.formBtn button:hover {
+    box-shadow: 10px 5px 5px #ffffff;
+}
+#contact .contact_right {
+    width: 525px;
+    height: 685px;
+    animation: right 1s ease-out;
+}
+
+#contact .contact_right img {
+    width: 450px;
+    height: 685px;
+    mix-blend-mode: multiply;
+
+}
+
+
+/* ==================== footer css code ============================ */
+
+footer{
+    width: 100vw;
+    height: max-content;
+    background: rgb(0, 1, 43);
+    padding: 20px 0px;
+    
+}
+
+.footer_top{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    border-bottom: 0.1px solid rgb(255, 255, 255);
+
+}
+.footer_top h3{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+.footer_top .footer_left{
+    color: #fff;
+    /* text-align: center; */
+    animation: left 1s ease-out;
+}
+.footer_top .footer_center{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    color: #fff;
+}
+
+.footer_center .footer_center_card{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 5px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.footer_center_card:hover{
+    color: #f00;
+}
+
+.footer_right{
+    animation: right 1s ease-out;
+}
+
+.footer_right .footer_right_card{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 5px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.footer_right_card i{
+    color: #f00;
+    font-size: 20px;
+}
+
+.footer_right .social_media{
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer_right .social_media a{
+    width: 42px;
+    height: 42px;
+    font-size: 1.5rem;
+    color: #ff0000;
+    /* background: #fff; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    border-radius: 50%;
+    z-index: 1;
+    /* border: 1px solid #fff; */
+}
+
+.social_media a:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid white;
+}
+
+footer .footer_bottom{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.footer_bottom a{
+    color: #f00;
+    text-decoration: underline;
+}
+
+#data{
+    display: none;
+}
